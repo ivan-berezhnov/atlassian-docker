@@ -1,6 +1,6 @@
 jira:
   container_name: jira
-  image: cptactionhank/atlassian-jira:7.0.5
+  image: cptactionhank/atlassian-jira:latest
   ports:
     - 8080:8080
   links:
@@ -12,7 +12,7 @@ jira-db:
 
 confluence:
   container_name: confluence
-  image: cptactionhank/atlassian-confluence:5.9.2
+  image: cptactionhank/atlassian-confluence:latest
   ports:
     - 8090:8090
   links:
@@ -24,7 +24,7 @@ confluence-db:
 
 bamboo:
   container_name: bamboo
-  image: nkatsaros/atlassian-bamboo
+  image: cptactionhank/atlassian-bamboo:latest
   ports:
     - 8085:8085
   links:
